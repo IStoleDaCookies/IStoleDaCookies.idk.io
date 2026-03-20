@@ -1,0 +1,109 @@
+body {
+  font-family: 'Orbitron', sans-serif; /* arcade-y font */
+  background: #0d0d0d; /* very dark background */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #1a001a; /* dark purple */
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff0000 inset;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff0000;
+}
+
+header input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #1a001a;
+  color: #fff;
+  box-shadow: 0 0 10px #ff00ff inset;
+}
+
+#categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+#categories button {
+  background: #220022;
+  border: 1px solid #ff00ff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ff00ff;
+  text-shadow: 0 0 3px #ff0000;
+  transition: all 0.3s;
+}
+
+#categories button:hover,
+#categories button.active {
+  background: #ff00ff;
+  color: #0d0d0d;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff0000;
+}
+
+h2 {
+  text-align: center;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff0000;
+  margin: 20px 0 10px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.game-card {
+  background: #220022;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 5px #ff00ff;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff0000;
+}
+
+.game-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.game-card button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ff00ff;
+  color: #0d0d0d;
+  text-shadow: 0 0 3px #ff0000;
+  transition: all 0.3s;
+}
+
+.game-card button:hover {
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff0000;
+}
