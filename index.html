@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Game Site</title>
-  <style>
-    body {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      font-family: Arial;
-    }
-    iframe {
-      width: 800px;
-      height: 500px;
-      border: none;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Game Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <h1>🎮 My Game Hub</h1>
+    <input type="text" id="search" placeholder="Search games...">
+  </header>
 
-<h1>Wil1</h1>
+  <nav id="categories">
+    <!-- Categories will be added dynamically -->
+  </nav>
 
-<h2>Game 1</h2>
-<iframe src="PUT-GAME-LINK-HERE"></iframe>
+  <section id="popular">
+    <h2>🔥 Popular Games</h2>
+    <div class="game-grid" id="popular-games"></div>
+  </section>
 
+  <section id="all-games">
+    <h2>All Games</h2>
+    <div class="game-grid" id="game-grid"></div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
